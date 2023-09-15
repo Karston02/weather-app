@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/styles/styles.css" />
+    <title>Weather Tracker</title>
+</head>
+<body>
+    <div class="outer-container">
+        <div class="header-container">
+            <h1 class="header">Weather Tracker</h1>
+        </div>
+        <div class="input-container">
+            <form action="/" method="get">
+                <div class="input-group">
+                    <input class="input-field" type="text" id="city_name" name="city_name" placeholder="City">
+                    <input class="input-field" type="text" id="state_name" name="state_name" placeholder="State">
+                    <input class="input-field" type="text" id="country_name" name="country_name" placeholder="Country">
+                </div>
+                <div class="button-container">
+                    <button class="search-button">Search</button>
+                </div>
+            </form>
+        </div>
+        {% if data %}
+        <div class="weather-container">
+            <div class="weather-info">
+                <div class="weather-info-item">
+                    <img src="https://openweathermap.org/img/wn/{{data.icon}}@2x.png" />
+                    <p class="temp">{{data.temp}}°F</p>
+                    <p class="city">{{data.city_name}}</p>
+                </div>
+                <div class="weather-info-item">
+                    <p>{{data.temp_low}} | {{data.temp_high}}</p>
+                </div>
+                <div class="humidity-wind-row">
+                    <img src="../static/icons/humidity.png" />
+                    <p>{{data.humidity}}% {{data.wind}} mph</p>
+                </div>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
