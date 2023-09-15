@@ -44,9 +44,9 @@ p {
     padding-bottom: 10px;
     padding-left: 10px;
     font-size: 1.5rem;
-    font-family:'Courier New', Courier, monospace;
+    font-family:'open sans', sans-serif;
     border-radius: 30px;
-    border-color: #00feba;
+    border: 3px solid #327f76;
 }
 @media screen and (max-width: 991px) {
     .input-group {
@@ -64,16 +64,17 @@ p {
     align-self: center;
     font-size: 1.5rem;
     font-family:'Courier New', Courier, monospace;
-    background-color: #4CAF50;
+    background-color: #327f76;
     color: white;
+    border-radius: 12px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
 }
 
 .weather-container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     width: auto;
     padding: 20px;
 }
@@ -82,20 +83,49 @@ p {
     margin-top: 20px;
 }
 
+.city-name-container {
+    width: 400px;
+    height: auto;
+    font-family: 'open sans', sans-serif;
+    color: #fff;
+    background: #327f76;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    font-size: 2.5rem;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin: 0;
+}
+
+.city-name-container h2 {
+    margin: 0;
+}
+
+.weather-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: auto;
+    padding: 20px;
+}
+
 .weather-info {
     width: 400px;
     height: auto;
     background: linear-gradient(135deg, #00feba, #5b548a);
-    border-radius: 20px;
+    border-radius: 16px;
+    border-top-right-radius: 0!important;
+    border-top-left-radius: 0!important;
     padding: 40px 35px;
     padding-top: 0!important;
     font-size: 1.5rem;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'open sans', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center; 
     text-align: center; 
-
 }
 
 .weather-info p {
