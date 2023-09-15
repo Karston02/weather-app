@@ -23,7 +23,7 @@ p {
 
 .header {
     font-size: 4rem;
-    font-family:'Courier New', Courier, monospace;
+    font-family:'open sans', sans-serif;
 }
 
 .input-container {
@@ -63,12 +63,14 @@ p {
     margin-top: 2vh;
     align-self: center;
     font-size: 1.5rem;
-    font-family:'Courier New', Courier, monospace;
+    font-family:'open sans', sans-serif;
     background-color: #327f76;
+    border: 2px solid #09322d;
     color: white;
     border-radius: 12px;
     border: none;
     cursor: pointer;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
 
 .weather-container {
@@ -95,6 +97,8 @@ p {
     padding-left: 35px;
     padding-right: 35px;
     margin: 0;
+    border: 2px solid #09322d;
+    border-bottom: none;
 }
 
 .city-name-container h2 {
@@ -126,6 +130,8 @@ p {
     flex-direction: column;
     justify-content: center; 
     text-align: center; 
+    border: 2px solid #09322d;
+    border-top: none;
 }
 
 .weather-info p {
