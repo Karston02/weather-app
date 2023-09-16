@@ -1,6 +1,7 @@
 .outer-container {
     width: auto;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     padding-left: max(6vw, (100vw - 1280px)/2);
     padding-right: max(6vw, (100vw - 1280px)/2);
     padding-top: 6vh;
@@ -101,6 +102,12 @@ p {
     border-bottom: none;
 }
 
+@media screen and (max-width: 500px) {
+    .city-name-container {
+        width: 80%;
+    }
+}
+
 .city-name-container h2 {
     margin: 0;
 }
@@ -132,6 +139,12 @@ p {
     text-align: center; 
     border: 2px solid #09322d;
     border-top: none;
+}
+
+@media screen and (max-width: 500px) {
+    .weather-info {
+        width: 80%;
+    }
 }
 
 .weather-info p {
