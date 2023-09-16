@@ -149,3 +149,21 @@ p {
     justify-content: space-between;
     margin-top: 20px;
 }
+
+.humidity-wind-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: auto;
+}
+
+.info-item img {
+    width: 24px; 
+    margin-right: 5px; 
+}
+

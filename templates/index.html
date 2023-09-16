@@ -36,9 +36,15 @@
                 <div class="weather-info-item">
                     <p>{{data.temp_low}} | {{data.temp_high}}</p>
                 </div>
-                <div class="humidity-wind-row">
-                    <img src="../static/icons/humidity.png" />
-                    <p>{{data.humidity}}% {{data.wind}} mph</p>
+                <div class="humidity-wind-info">
+                    <div class="info-item">
+                        <img src="../static/icons/humidity.png" alt="Humidity Icon">
+                        <p>{{data.humidity}}%</p>
+                    </div>
+                    <div class="info-item">
+                        <img src="../static/icons/wind.png" alt="Wind Icon">
+                        <p>{{data.wind}} mph</p>
+                    </div>
                 </div>
         </div>
         {% endif %}
