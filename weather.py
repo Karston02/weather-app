@@ -44,7 +44,6 @@ def get_weather(city_name, state_code, country_code, API_KEY):
     data.temp = round(data.temp)
     data.temp_low = round(data.temp_low)
     data.temp_high = round(data.temp_high)
-    print(response)
     return data
 
 def main(city_name, state_name, country_name):
